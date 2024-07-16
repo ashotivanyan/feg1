@@ -1,21 +1,24 @@
-console.log(25 + 55);
-console.log(11 - 4);
-console.log(20 / 5);
-console.log(6 * 9);
-console.log(5 % 2);
-console.log(21 + 5 * 9);
-console.log((10 + 6) * 5);
+"use strict";
 
-console.log(7 > 4);
-console.log(8 < 2);
-console.log(10 >= 9);
-console.log(8 <= 8);
-console.log(25 == 25);
-console.log(25 === 25);
-console.log(30 != "30");
-console.log(20 !== "20");
+const countOfFilms = +prompt("How many movies have you watche ever ?");
 
-console.log(3 >= 7 && 10 === 10);
-console.log(5 >=3 && 2 === 2);
+const DB = {
+    count: countOfFilms,
+    movies: {},
+    actors: {},
+    genrer: [],
+    privat: false
+};
 
-console.log(10 > 30 || 1 === 2);
+const a = prompt("What movie did you watch recently?");
+const b = +prompt("How much do you rate that movie?");
+const c = prompt("What movie did you watch recently?");
+const d = +prompt("How much do you rate that movie?");
+const e = prompt("What movie did you watch recently?");
+const f = +prompt("How much do you rate that movie?");
+
+DB.movies[a] = b;
+DB.movies[c] = d;
+DB.movies[e] = f;
+
+console.log(DB);
